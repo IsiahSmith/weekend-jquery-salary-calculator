@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script src="jquery-3.6.0.js"></script>
     <script src="client.js"></script>
     <title>Salary Calculator</title>
@@ -16,10 +17,24 @@
     <input placeholder="Last Name" id="lastNameEnter">
     <input placeholder="ID" id="idEnter">
     <input placeholder="Title" id="titleEnter">
-    <input placeholder="An" id="annualSalaryEnter">
+    <input placeholder="Annual Salary" id="annualSalaryEnter">
     <button id="Submit">Submit</button>
 </div>
 
+<table class="Table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+        </tr>
+    </thead>
+    <tbody id="drop">
+        
+    </tbody>
+</table>
 
 </body>
 </html>
