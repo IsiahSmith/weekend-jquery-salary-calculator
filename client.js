@@ -38,7 +38,7 @@ function render() {
     <td>${employee.lastName}</td>
     <td>${employee.iD}</td>
     <td>${employee.title}</td>
-    <td>${formatCurrency(employee.annualSalary)}</td>
+    <td class="money">${formatCurrency(employee.annualSalary)}</td>
     <td><button id="deleteButton">Delete</button></td>
     </tr>
     `);

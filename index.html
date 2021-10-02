@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,33 +11,37 @@
     <script src="client.js"></script>
     <title>Salary Calculator</title>
 </head>
+
 <body>
     <header>Salary Calculator</header>
     <h1>Add Employee</h1>
-<div>
-    <input placeholder="First Name" id="firstNameEnter">
-    <input placeholder="Last Name" id="lastNameEnter">
-    <input placeholder="ID" id="idEnter">
-    <input placeholder="Title" id="titleEnter">
-    <input placeholder="Annual Salary" id="annualSalaryEnter">
-    <button id="Submit">Submit</button>
-</div>
+    <div>
+        <input placeholder="First Name" id="firstNameEnter">
+        <input placeholder="Last Name" id="lastNameEnter">
+        <input placeholder="ID" id="idEnter">
+        <input placeholder="Title" id="titleEnter">
+        <input placeholder="Annual Salary" id="annualSalaryEnter">
+        <button id="Submit">Submit</button>
+    </div>
 
-<table class="table">
-    <thead>
-        <h2>Employees</h2>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Annual Salary</th>
-        </tr>
-    </thead>
-    <tbody id="drop">
+    </div>
 
-    </tbody>
-</table>
-<h3>Total Monthly: <span id="monthly"></span></h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <h2>Employees</h2>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody id="drop">
+
+        </tbody>
+    </table>
+    <h3 class="money">Total Monthly: <span id="monthly">$0</span></h3>
 </body>
+
 </html>
