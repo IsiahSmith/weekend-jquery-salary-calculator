@@ -4,7 +4,8 @@ $(readyNow);
 
 function readyNow() {
     console.log('JQ');
-    $(`#Submit`).on(`click`, addEmployee)
+    $(`#Submit`).on(`click`, addEmployee);
+    $(`#drop`).on(`click`, `#deleteButton`, deleteEmployee);
 };
 
 function addEmployee() {
@@ -31,8 +32,13 @@ function render() {
     <td>${employee.iD}</td>
     <td>${employee.title}</td>
     <td>${employee.annualSalary}</td>
+    <td><button id="deleteButton">Delete</button></td>
     </tr>
     `);
 $(`#drop`).append(row);
     }
+};
+
+function deleteEmployee(){
+$(this).closest(`tr`).remove();
 };
