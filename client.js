@@ -17,10 +17,22 @@ function addEmployee() {
     };
     employeeList.push(employeeInfo);
     console.log(employeeList);
-    
+
     render();
 };
 
 function render() {
-    
+    $(`#drop`).empty();
+    for (let employee of employeeList) {
+        const row = $(`
+    <tr>
+    <td>${employee.firstName}</td>
+    <td>${employee.lastName}</td>
+    <td>${employee.iD}</td>
+    <td>${employee.title}</td>
+    <td>${employee.annualSalary}</td>
+    </tr>
+    `);
+$(`#drop`).append(row);
+    }
 };
