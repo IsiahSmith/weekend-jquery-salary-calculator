@@ -8,11 +8,18 @@ color: white;
 background-color: #666666;
 font-size: 1cm;
 padding: 20px;
-padding: 20px;
 margin-bottom: 30px;
 }
 
 .money {
 text-align: right;
-margin-right: 10px;
+margin-right: 15px;
+}
+
+.touchup {
+    margin-left: 15px;
+}
+
+.spacing {
+    
 }
